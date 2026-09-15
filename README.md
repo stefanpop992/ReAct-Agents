@@ -6,6 +6,10 @@ machine learning studies.
 
 **Stack:** Python · OpenAI API · JSON · subprocess · REST APIs
 
+<p align="center">
+  <img src="docs/images/multi-agent-collaboration.png" alt="Multi-agent collaboration session" width="900">
+</p>
+
 ## Choose an example
 
 | Agent | What it demonstrates | Requirements |
@@ -19,15 +23,15 @@ intentional addition bug. Ask the agent to inspect it, approve the proposed edit
 and inspect the verification output. The walkthrough below describes the
 expected interaction; model responses can vary.
 
-## Scope and limitations
+## Screenshots
 
-This is an educational implementation. Parts 1 and 2 execute approved commands
-on your machine; the string blocklist is not a sandbox. File-path checks do not
-resolve symbolic links, and Part 2 requests JSON through its prompt rather than
-validating responses against a complete tool schema.
+### Direct mention and agent response
 
-Part 3 proposes code in chat; it does not apply that code to a shared repository.
-The included bug example is a demonstration fixture, not an automated test suite.
+![Agent summarizing a shared conversation](docs/images/question_1.png)
+
+### Verification response
+
+![Agent explaining what it can and cannot verify](docs/images/question_2.png)
 
 ---
 
